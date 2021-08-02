@@ -11,13 +11,20 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
-<body>
+<body onload='pageRedirect();'>
 
 
 <script>
+function pageRedirect() {
+  window.location.replace("https://jsw08.github.io/startpage");
+}      
+setTimeout("pageRedirect()", 200);  
+  
 window.addEventListener("keydown", function(event) {
   var key = event.key;
-  alert(key);
+  if (key == 'e') {
+    window.location.replace("https://google.com");
+  }
 }, true);
 
 
