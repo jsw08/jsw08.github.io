@@ -11,16 +11,17 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
-<body onload='onEvent()'>
+<body>
 
 
 <script>
+setTimeout(function(){
+  window.location.href = 'https://jsw08.github.io/starpage';
+}, 200);
+  
 document.addEventListener("keypress", function onEvent(event) {
     if (event.key === "f") {
-      alert("broeh");
-    }
-    else {
-      window.location.replace("https://jsw08.github.io/startpage");
+      window.location.replace("https://google.com");
     }
     
 });
